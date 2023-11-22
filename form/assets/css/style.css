@@ -1,0 +1,133 @@
+body {
+background-image: url('../images/anonymous-2755365_640.jpg'); 
+background-repeat: no-repeat;
+background-attachment: fixed;  
+background-size: cover;
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+   background-color: #b6b7b8;
+   padding: 9px;
+   margin-top: 20%;
+}
+form h1 {
+    position: relative;
+    top: -9rem;
+    left: 2rem;
+    margin: 15px 1px 0 0;
+    color: #b8d2e3;
+}
+ h3 {
+    
+    color: #f61818;
+}
+ h2 {
+    
+    color: #f61818;
+}
+form h4 {
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    height: 21px;
+    border: 1px solid #d1d3d5;
+    border-radius: 9px;
+    color: rgb(247, 238, 238);
+    background-color: #d1d3d5;
+    opacity: 1;
+    
+}
+::placeholder {
+    color: rgb(248, 246, 249);
+    font-family: 'Courier New', Courier, monospace;
+  }
+textarea {
+    background-color: #d1d3d5;;
+}
+
+input:nth-child(n +9) {
+    background-color: #b8d2e3;
+    border: 1px solid #669fc5;
+    animation-name: test;
+    color: white;
+}
+input:nth-child(n +7):hover {
+    background-color: #669fc5;
+}
+input:nth-child(7):hover {
+    background-color: #c56671;
+}
+label {
+    color: white;
+}
+
+fieldset {
+    border: none;
+    display: grid;
+    grid-template-columns: auto auto;
+    color: white;
+}
+.row {
+    display: flex;
+}
+.img-holder {
+    width: 50%;
+}
+.img-holder h3 {
+    padding: 24%;
+    width: 100%;
+    color: white;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.form-holder {
+width: 30%;
+}
+
+@media (max-width: 800px) {
+    .img-holder {
+        width: 0;
+    }
+    .form-holder {
+        width: 100%;
+        }
+        .img-holder h3 {
+visibility: hidden;
+padding: 0;
+margin: 0;
+        }
+ form {
+      
+       margin-top: 0;
+    }
+  body {
+    background: none;
+    background-color: #d1d3d5;
+  }
+}
+a {
+    text-decoration: none;
+    color: rgb(29, 76, 121);
+}
+a:hover{
+color: red;
+}
+input[type=text]:invalid,
+input[type=number]:invalid,
+input[type=email]:invalid {
+    border: 2px solid red;
+    background-color: #ff000022;
+}
+
+.errorMarking {
+    border: 2px solid red;
+  }
+#Alarm{
+    text-align: center;
+}
